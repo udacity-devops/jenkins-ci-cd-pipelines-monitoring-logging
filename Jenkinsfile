@@ -14,6 +14,7 @@ pipeline {
          stage('Lint HTML') {
               steps {
                   sh 'tidy -q -e *.html'
+                  sh 'cat index.html'
               }
          }
          stage('Security Scan') {
