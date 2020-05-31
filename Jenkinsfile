@@ -8,7 +8,6 @@ pipeline {
                      echo "Installing tidy"
                      apt update
                      apt install -y tidy
-                     cat index.html
                  '''
              }
          }
