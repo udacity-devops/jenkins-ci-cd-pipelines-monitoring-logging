@@ -4,11 +4,6 @@ pipeline {
          stage('Build') {
              steps {
                  sh 'echo "Hello World"'
-                 sh '''
-                     echo "Installing tidy"
-                     apt update
-                     apt install -y tidy
-                 '''
              }
          }
          stage('Lint HTML') {
